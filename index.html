@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--human-readable text-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--maximum-scale limits user to zoom-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51ff4837a4.js" crossorigin="anonymous"></script>
+    <title>Counter People App</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-all">
+            <img class="logo-img" src="./images/javascript-logo.png" alt="logo-jascript" width=25px height="auto"/>
+            <h3 class="logo-name">JAVASCRIPT PROJECTS</h3>
+        </div>
+        <ul class="menu-items">
+            <li><a href="./home.html">Home</a></li>
+            <li>Projects</li>
+            <li>About Me</li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1 class="title">Project Counting People</h1>
+        <article class="container-counter">
+            <section class="head">
+                <h1>People Inside</h1>
+                <p id="count-el">0</p>
+            </section>
+
+            <section class="right-side">
+                <div class="img-act entry">
+                    <i class="fas fa-walking fa-5x"></i>
+                    <i class="fas fa-arrow-right fa-5x"></i>
+                    <i class="fas fa-door-open fa-5x"></i>
+                </div>
+                <div class="counter-now" id="counter-enter">
+                    <p>People Entering Now</p>
+                    <p id="people-entering">0</p>
+                </div>
+            </section>
+
+            <section class="middle">
+                <div class="buttons">
+                    <button id="inc-btn" onclick="increaseCount()">Increase</button>
+                    <button id="dec-btn" onclick="decreaseCount()">Decrease</button>
+                    <button id="save-btn" onclick="save()">Save</button>
+                    <button id="reset-btn" onclick="reset()">Reset</button>
+                </div>
+                <div>
+                    <p id="save-el">Previus entries: </p>
+                    <p class="status">Status</p>
+                </div>
+            </section>
+            <section class="left-side">
+                <div class="img-act exit">
+                    <i class="fas fa-door-open fa-5x"></i>
+                    <i class="fas fa-arrow-right fa-5x"></i>
+                    <i class="fas fa-walking fa-5x"></i>
+                </div>
+                <div class="counter-now" id="counter-exit">
+                    <p>People Leaving Now</p>
+                    <p id="people-leaving">0</p>
+                </div>  
+            </section>
+
+            <section class="capacity">
+                 <h1>Max Capacity</h1>
+                 <p class="max-cap">0</p>
+
+                 <div class="btn-container">
+                 <button class="btn-change" id="increase-one" onclick="decreaseOneCap()">-</button>
+                 <button class="btn-change" id="decrease-one" onclick="increaseOneCap()">+</button>
+                </div>
+
+                <div class="btn-container">
+                <button class="btn-change" id="increase-ten" onclick="decreaseTenCap()">-10</button>
+                <button class="btn-change" id="decrease-ten" onclick="increaseTenCap()">+10</button>
+                </div>
+                <button id="reset-cap" onclick="resetCap()">Reset</button>
+
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <ul class="social-contacts">
+            <li>
+                <a href="www.linkedin.com/in/andre-barbosa-b4933114a">
+                    <i class="fab fa-linkedin"></i>
+            
+                    LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100022024270844">
+                    <i class="fab fa-facebook"></i>
+
+                    Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-github"></i>
+
+                    Github</a>
+            </li>
+            
+            <li>
+                <a href="https://codepen.io/aquarius83">
+                    <i class="fab fa-codepen"></i>
+
+                    CodePen</a>
+            </li>
+        </ul>
+        <h6 class="footer">&copy; 2022 Andre Barbosa</h6>
+        
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
