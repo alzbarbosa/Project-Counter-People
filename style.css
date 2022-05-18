@@ -345,27 +345,25 @@ footer {
   }
 }
 
-@media (min-height: 1000px) {
-  footer,
+@media (min-height: 900px) {
   main {
-    margin-top: 25px;
+    min-height: 800px;
   }
-  
+
 }
 
 @media (min-height: 1100px) {
-  footer, 
   main {
-    margin-top: 125px;
+    min-height: 1000px;
   }
 }
 
 @media (min-height: 1200px) {
-  footer,
   main {
-    margin-top: 225px;
-  }
-  }
+      min-height: 1200px;
+    }
+}
+
 
 
 
